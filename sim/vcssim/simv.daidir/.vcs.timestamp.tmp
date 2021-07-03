@@ -1,0 +1,103 @@
+0 
+40
++cli+1
++itf+/usr/synopsys/vcs-L-2016.06/linux64/lib/vcsdp.tab
++memcbk
++v2k
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/synopsys/vcs-L-2016.06/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic -rdynamic
+-Mobjects= /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a
+-Mout=simv
+-Msaverestoreobj=/usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl -lm
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/synopsys/vcs-L-2016.06/include
+-P
+-P
+-Xcbug=0x1
+-Xpiyushb1=0x80
+-Xvcs_run_simv=1
+-debug=1
+-f file_path.f
+-fsdb
+-fsdb
+-full64
+-gen_obj
+-l
+-picarchive
+-sverilog
+/usr/synopsys/vcs-L-2016.06/linux64/bin/vcs1
+/usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/novas.tab
+/usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/verdi.tab
+run.log
+44
+sysc_uni_pwd=/mnt/mydata/spi/sim/vcssim
+demo_name=spi_top
+XDG_MENU_PREFIX=xfce-
+XDG_DATA_DIRS=/usr/local/share:/usr/share
+XDG_CURRENT_DESKTOP=XFCE
+XDG_CONFIG_DIRS=/etc/xdg
+VTE_VERSION=5202
+VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-543241f9-f189-4d9e-8f26-0a97ae92e4f3.sock
+VNCDESKTOP=lizhen:1 ()
+VMR_MODE_FLAG=64
+VERDI_HOME=/usr/synopsys/verdi-L-2016.06-1
+VCS_TARGET_ARCH=amd64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=run.log
+VCS_HOME=/usr/synopsys/vcs-L-2016.06/
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/usr/synopsys/vcs-L-2016.06/linux64
+TERM_PROGRAM_VERSION=1.57.1
+TERM_PROGRAM=vscode
+TCP_NODELAY=YES
+SYNOPSYS=/usr/synopsys/fm-K-2015.06-SP4
+SESSION_MANAGER=local/lizhen:@/tmp/.ICE-unix/12776,unix/lizhen:/tmp/.ICE-unix/12776
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+REMOTE_CONTAINERS_SOCKETS=["/tmp/vscode-ssh-auth-39d1dd5334908d5c7b975b6919be74bf0ad78460.sock"]
+REMOTE_CONTAINERS_IPC=/tmp/vscode-remote-containers-ipc-39d1dd5334908d5c7b975b6919be74bf0ad78460.sock
+OVA_UUM=0
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/2
+MAKE_TERMERR=/dev/pts/2
+MAKELEVEL=1
+MAKEFLAGS=
+LC_ALL=C
+GLADE_PIXMAP_PATH=:
+GLADE_MODULE_PATH=:
+GLADE_CATALOG_PATH=:
+DESKTOP_SESSION=xfce
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-3Dg1sbAKqk,guid=88b3e24b3d35f14a6ad9fec260d5de64
+COLORTERM=truecolor
+0
+8
+1624464927 ./../../bench/APB_Master_Model.v
+1624198663 ./../../rtl/fifo_sync.v
+1624459162 ./../../rtl/SPI_MODULE.v
+1624635335 ./../../bench/SPI_MODULE_tb.v
+1624547668 file_path.f
+1464145466 /usr/synopsys/vcs-L-2016.06/linux64/lib/vcsdp.tab
+1468145700 /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/novas.tab
+1468145700 /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/verdi.tab
+5
+0 
+1464147802 /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so
+1464147272 /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so
+1464147248 /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so
+1468144468 /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a

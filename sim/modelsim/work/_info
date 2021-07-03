@@ -1,0 +1,150 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dJ:/Docker/share/FIFO/sim
+vAPB_Master_Model
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 0;Jm?@mn1Bi]JeoCVOibS1
+I56<P6]I9ORMQii5=JLAb]3
+Z1 dJ:/Docker/share/spi/sim/modelsim
+w1623683260
+8J:/Docker/share/spi/bench/APB_Master_Model.v
+FJ:/Docker/share/spi/bench/APB_Master_Model.v
+L0 3
+Z2 OL;L;10.4;61
+!s108 1624198970.203000
+!s107 J:/Docker/share/spi/bench/APB_Master_Model.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|J:/Docker/share/spi/bench/APB_Master_Model.v|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@a@p@b_@master_@model
+vFIFO_SYNC
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 22Ekc]RoLg][W88d4ZU^42
+IDi;cc5UTjf;Jd9@ACgAM@1
+R1
+w1623942236
+8J:/Docker/share/spi/rtl/fifo_sync.v
+FJ:/Docker/share/spi/rtl/fifo_sync.v
+L0 2
+R2
+!s108 1624113467.782000
+!s107 J:/Docker/share/spi/rtl/fifo_sync.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|J:/Docker/share/spi/rtl/fifo_sync.v|
+!i113 0
+R3
+n@f@i@f@o_@s@y@n@c
+vfifo_sync
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 TMS>a[596Cag:FI8U8Uc[2
+I@n3FBU<]2`Z7HHN;37OUB3
+R1
+w1624198663
+8./../../rtl/fifo_sync.v
+F./../../rtl/fifo_sync.v
+L0 2
+R2
+!s108 1624288188.434000
+!s107 ./../../rtl/fifo_sync.v|
+!s90 -reportprogress|300|+acc|./../../rtl/fifo_sync.v|
+!i113 0
+Z4 o+acc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vfifo_sync_tb
+!s110 1624198970
+!i10b 1
+!s100 d8O0<:NNF>oOa8c2<N0zn3
+IjcO=fARaAONNK_4:8a<1G1
+R0
+R1
+w1624194697
+8J:/Docker/share/spi/bench/fifo_sync_tb.v
+FJ:/Docker/share/spi/bench/fifo_sync_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1624198969.590000
+!s107 J:/Docker/share/spi/bench/fifo_sync_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|J:/Docker/share/spi/bench/fifo_sync_tb.v|
+!i113 0
+R3
+vSPI_MODULE
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 4T68c@D0b8RPdknL6a2GI0
+I[ffFPoI1UVP3HL_A20kSc2
+R1
+w1624288072
+8./../../rtl/SPI_MODULE.v
+F./../../rtl/SPI_MODULE.v
+L0 2
+R2
+!s108 1624288188.178000
+!s107 ./../../rtl/SPI_MODULE.v|
+!s90 -reportprogress|300|+acc|./../../rtl/SPI_MODULE.v|
+!i113 0
+R4
+n@s@p@i_@m@o@d@u@l@e
+vSPI_MODULE_tb
+!s110 1624288188
+!i10b 1
+!s100 ZXgfNKGjk29ZUlm39Zb:V0
+I5]E21BSJhmok]ZZNlO?z?2
+R0
+R1
+w1624200972
+8./../../bench/SPI_MODULE_tb.v
+F./../../bench/SPI_MODULE_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1624288188.589000
+!s107 ./../../bench/SPI_MODULE_tb.v|
+!s90 -reportprogress|300|+acc|./../../bench/SPI_MODULE_tb.v|
+!i113 0
+R4
+n@s@p@i_@m@o@d@u@l@e_tb
+vtb_SPI_MODULE
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 3PMVeICFl^;<ROmaK[gN33
+IKA50z4<]_5Z>O>:d4nHQ=0
+R1
+w1623941676
+8J:/Docker/share/spi/bench/SPI_MODULE_tb.v
+FJ:/Docker/share/spi/bench/SPI_MODULE_tb.v
+L0 3
+R2
+!s108 1624113467.973000
+!s107 J:/Docker/share/spi/bench/SPI_MODULE_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|J:/Docker/share/spi/bench/SPI_MODULE_tb.v|
+!i113 0
+R3
+ntb_@s@p@i_@m@o@d@u@l@e

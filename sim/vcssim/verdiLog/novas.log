@@ -1,0 +1,61 @@
+Verdi Release Verdi3_L-2016.06-1 (RH Linux x86_64/64bit) 07/10/2016
+(C) 1999 - 2016 by Synopsys, Inc.
+All Rights Reserved.
+www.synopsys.com
+
+This program is proprietary and confidential information of Synopsys, Inc. and 
+may be used and disclosed only as authorized in a license agreement controlling 
+such use and disclosure.
+
+
+Total number of converted HDL2CELL cells=0 (normal modules=0)
+Inferring module SPI_MODULE, file ./../../rtl/SPI_MODULE.v, line 2~332 (Verilog)
+
+
+Verdi design analysis: total error(s) 0, total warning(s) 0.
+Inferring module SPI_MODULE_tb, file ./../../bench/SPI_MODULE_tb.v, line 3~125 (Verilog)
+
+
+Module SPI_MODULE_tb, File ./../../bench/SPI_MODULE_tb.v, Line 3~125, Total error(s) 0, warning(s) 2
+
+
+Verdi design analysis: total error(s) 0, total warning(s) 2.
+---- Any errors/warnings, please refer to file /mnt/mydata/spi/sim/vcssim/verdiLog/novas.log -----------------------
+[Symbol Library from default setting]
+  library Path = /usr/synopsys/verdi-L-2016.06-1/share/symlib/64
+  library Name = default_u
+[Symbol Library from manual setting]
+  There are 0 library path(s) and 0 library name(s):
+
+
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.c_state#370000 => cpu = 0.00
+Inferring module fifo_sync, file ./../../rtl/fifo_sync.v, line 2~64 (Verilog)
+
+
+Verdi design analysis: total error(s) 0, total warning(s) 0.
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.n_state#350000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.Wrtie_Empty#330000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync.read_gap#330000 => cpu = 0.00
+Inferring module APB_Master_Model, file ./../../bench/APB_Master_Model.v, line 3~108 (Verilog)
+
+
+Verdi design analysis: total error(s) 0, total warning(s) 0.
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync.wpt#330000 => cpu = 0.01
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync.wpt#310000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.wfre#164450000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.c_state#164430000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.n_state#164410000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.clk_en#164390000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.clk_cnt#164390000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.clk_cnt#164370000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.clk_cnt#164350000 => cpu = 0.01
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.clk_cnt#164330000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.clk_cnt#164310000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.clk_cnt#164290000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.wfre#164410000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.wfre#350000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.Wrtie_Empty#330000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync.read_gap#330000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync.wpt#330000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync.wpt#310000 => cpu = 0.00
+TS: trace fanin for SPI_MODULE_tb.u_SPI_MODULE.c_state#330000 => cpu = 0.00

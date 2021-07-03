@@ -1,0 +1,14 @@
+*design* DebussyLib (btIdent Verdi3_L-2016.06-1)
+Command arguments:
+    +define+verilog
+    -f file_path.f
+        ./../../bench/SPI_MODULE_tb.v
+        ./../../rtl/SPI_MODULE.v
+        ./../../rtl/fifo_sync.v
+        ./../../bench/APB_Master_Model.v
+    -sv
+
+Highest level modules:
+SPI_MODULE_tb
+
+Total	0 error(s),   0 warning(s)

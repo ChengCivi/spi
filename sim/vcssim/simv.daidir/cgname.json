@@ -1,0 +1,22 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "SPI_MODULE_tb": [
+        "SPI_MODULE_tb",
+        "CjWEB",
+        "module"
+    ],
+    "fifo_sync": [
+        "fifo_sync",
+        "prbSR",
+        "module"
+    ]
+}

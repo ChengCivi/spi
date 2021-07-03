@@ -1,0 +1,541 @@
+debImport "-f" "file_path.f" "-sv"
+debLoadSimResult /mnt/mydata/spi/sim/vcssim/spi_top.fsdb
+wvCreateWindow
+verdiWindowResize -win $_Verdi_1 -3 "31" "1920" "971"
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+wvSelectGroup -win $_nWave2 {G1}
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE.read_fifo_sync" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync" -win $_nTrace1
+srcSetScope -win $_nTrace1 "SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync" -delim \
+           "."
+verdiDockWidgetSetCurTab -dock widgetDock_<Decl._Tree>
+verdiDockWidgetSetCurTab -dock widgetDock_<Inst._Tree>
+verdiDockWidgetSetCurTab -dock widgetDock_<Message>
+nsMsgSwitchTab -tab cmpl
+nsMsgSwitchTab -tab trace
+srcDeselectAll -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_APB" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcSetScope -win $_nTrace1 "SPI_MODULE_tb.u_SPI_MODULE" -delim "."
+srcSelect -signal "rfdout" -win $_nTrace1
+srcAction -pos 131 5 2 -win $_nTrace1 -name "rfdout" -ctrlKey on
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rfdout" -win $_nTrace1
+srcAction -pos 131 5 2 -win $_nTrace1 -name "rfdout" -ctrlKey off
+nsMsgSelect -range {0 0-0}
+nsMsgAction -tab trace -index {0 0}
+nsMsgSelect -range {0 0-0}
+nsMsgSelect -range {0 0-0}
+nsMsgSelect -range {0 2-2}
+nsMsgAction -tab trace -index {0 2}
+nsMsgSelect -range {0 2-2}
+nsMsgSelect -range {0 1 0-0}
+nsMsgSelect -range {0 1-1}
+nsMsgAction -tab trace -index {0 1}
+nsMsgSelect -range {0 1-1}
+nsMsgSelect -range {0 2-2}
+nsMsgSelect -range {0 2-2}
+nsMsgSelect -range {0 2-2}
+nsMsgSelect -range {0 1 0-0}
+nsMsgSelect -range {0 1 0-0}
+nsMsgAction -tab trace -index {0 1 0}
+nsMsgSelect -range {0 1 0-0}
+nsMsgSelect -range {0 1 0-0}
+nsMsgAction -tab trace -index {0 1 0}
+nsMsgSelect -range {0 1 0-0}
+nsMsgSelect -range {0 1 0-0}
+nsMsgAction -tab trace -index {0 1 0}
+nsMsgSelect -range {0 1 0-0}
+nsMsgSelect -range {0 2 0-0}
+nsMsgSelect -range {0 2 0-0}
+nsMsgAction -tab trace -index {0 2 0}
+nsMsgSelect -range {0 2 0-0}
+nsMsgSelect -range {0 1 0-0}
+nsMsgAction -tab trace -index {0 1 0}
+nsMsgSelect -range {0 1 0-0}
+nsMsgSelect -range {0 2 0-0}
+nsMsgAction -tab trace -index {0 2 0}
+nsMsgSelect -range {0 2 0-0}
+nsMsgSelect -range {0 1 0-0}
+nsMsgSelect -range {0 1 0-0}
+nsMsgAction -tab trace -index {0 1 0}
+nsMsgSelect -range {0 1 0-0}
+nsMsgSelect -range {0 2 0-0}
+nsMsgAction -tab trace -index {0 2 0}
+nsMsgSelect -range {0 2 0-0}
+nsMsgSelect -range {0 2-2}
+nsMsgAction -tab trace -index {0 2}
+nsMsgSelect -range {0 2-2}
+nsMsgSelect -range {0 1-1}
+nsMsgAction -tab trace -index {0 1}
+nsMsgSelect -range {0 1-1}
+nsMsgSelect -range {0 2-2}
+nsMsgSelect -range {0 2-2}
+nsMsgSelect -range {0 2-2}
+nsMsgSelect -range {0 2 0-0}
+nsMsgSelect -range {0 2 0-0}
+nsMsgAction -tab trace -index {0 2 0}
+nsMsgSelect -range {0 2 0-0}
+nsMsgSelect -range {0 1-1}
+nsMsgSelect -range {0 1 0-0}
+nsMsgAction -tab trace -index {0 1 0}
+nsMsgSelect -range {0 1 0-0}
+nsMsgSelect -range {0 1 0-0}
+srcDeselectAll -win $_nTrace1
+nsMsgSelect -range {0 1-1}
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+sidUpdateSignalValue
+srcDeselectAll -win $_nTrace1
+nsMsgSelect -range {0 1-1}
+nsMsgAction -tab trace -index {0 1}
+nsMsgSelect -range {0 1-1}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "Wrtie_Empty" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PWDATA\[7:0\]" -win $_nTrace1
+srcActiveTrace "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1 \
+           -noActiveTrace
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PWDATA\[7:0\]" -win $_nTrace1
+srcActiveTrace "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1 \
+           -noActiveTrace
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PWDATA\[7:0\]" -win $_nTrace1
+srcSetScope "SPI_MODULE_tb" -win $_nTrace1
+srcSearchString "PWDATA\[*31:0*\]" -win $_nTrace1 -next -case
+srcSetScope "SPI_MODULE_tb" -win $_nTrace1
+srcSearchString "PWDATA\[*31:0*\]" -win $_nTrace1 -next -case
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PADDR" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PWDATA" -win $_nTrace1
+srcSetScope "SPI_MODULE_tb.u_APB.PWDATA\[31:0\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiDockWidgetSetCurTab -dock widgetDock_<Decl._Tree>
+srcTBBTreeSelect -win $_nTrace1 -path "SPI_MODULE_tb"
+srcTBShowDeclTreeNavigate
+srcTBShowDeclTreeNavigate
+srcTBShowDeclTreeInstantiation
+nsMsgSwitchTab -tab intercon
+srcTBBTreeSelect -win $_nTrace1 -path "SPI_MODULE_tb"
+srcTBBTreeSelect -win $_nTrace1 -path "SPI_MODULE"
+srcTBDeclTreeExpandTree -level "all"
+srcTBBTreeSelect -win $_nTrace1 -path "SPI_MODULE"
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PWDATA" -win $_nTrace1
+srcTraceLoad "SPI_MODULE_tb.u_APB.PWDATA\[31:0\]" -win $_nTrace1
+nsMsgSwitchTab -tab trace
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcTraceDriver "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_APB" -win $_nTrace1
+srcTraceLoad "SPI_MODULE_tb.u_APB.PWDATA\[31:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcTraceDriver "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_APB" -win $_nTrace1
+srcTraceDriver "SPI_MODULE_tb.u_APB.PWDATA\[31:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_APB" -win $_nTrace1
+srcTraceLoad "SPI_MODULE_tb.u_APB.PWDATA\[31:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcTraceLoad "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcTraceLoad "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcTraceLoad "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcTraceLoad "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcTraceLoad "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcTraceLoad "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcTraceLoad "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcTraceLoad "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcTraceLoad "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PWDATA\[7:0\]" -win $_nTrace1
+srcAction -pos 90 6 4 -win $_nTrace1 -name "PWDATA\[7:0\]" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PWDATA" -win $_nTrace1
+srcAction -pos 39 1 4 -win $_nTrace1 -name "PWDATA" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PWDATA" -win $_nTrace1
+srcAction -pos 39 1 2 -win $_nTrace1 -name "PWDATA" -ctrlKey off
+srcTraceDriver "SPI_MODULE_tb.u_APB.PWDATA\[31:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_APB" -win $_nTrace1
+verdiDockWidgetSetCurTab -dock windowDock_nWave_2
+verdiDockWidgetSetCurTab -dock widgetDock_<Message>
+regOpenWindow
+regCloseWindow -win $_nReg0
+srcSetOptions -win $_nTrace1 -annotate on
+schSetOptions -win $_nSchema1 -annotate on
+srcHBSelect "SPI_MODULE_tb.u_APB" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiDockWidgetSetCurTab -dock windowDock_nWave_2
+wvSelectGroup -win $_nWave2 {G1}
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcHBAddObjectToWave
+wvSetCursor -win $_nWave2 10742307.745400 -snap {("G1" 10)}
+wvSetCursor -win $_nWave2 544899.668245 -snap {("G1" 10)}
+wvZoom -win $_nWave2 622742.477994 3347240.819219
+wvSetCursor -win $_nWave2 1148263.556470 -snap {("G1" 10)}
+wvSetCursor -win $_nWave2 1163043.836802 -snap {("G1" 10)}
+wvSetCursor -win $_nWave2 1151548.063211 -snap {("G1" 10)}
+wvSetCursor -win $_nWave2 1232018.478352 -snap {("G1" 10)}
+wvSelectSignal -win $_nWave2 {( "G1" 9 )} 
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PWRITE" -win $_nTrace1
+wvSetCursor -win $_nWave2 1161401.583432 -snap {("G1" 11)}
+wvSetCursor -win $_nWave2 1330553.680567 -snap {("G1" 10)}
+wvSelectSignal -win $_nWave2 {( "G1" 10 )} 
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PWRITE" -win $_nTrace1
+srcSignalView -on
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcSignalViewCollapse -row 1
+srcSignalViewExpand -row 1
+srcSignalViewCollapse -row 1
+srcDeselectAll -win $_nTrace1
+srcSignalViewExpand -row 1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcSetScope -win $_nTrace1 "SPI_MODULE_tb.u_SPI_MODULE" -delim "."
+srcDeselectAll -win $_nTrace1
+srcSignalViewSelect "SPI_MODULE_tb.u_SPI_MODULE.PADDR\[31:0\]"
+srcSignalViewSelect "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[31:0\]"
+wvSetCursor -win $_nWave2 1033305.820554 -snap {("G1" 9)}
+wvSetCursor -win $_nWave2 972542.445855 -snap {("G1" 9)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSetCursor -win $_nWave2 1476714.230518 -snap {("G1" 4)}
+srcTraceConnectivity "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[31:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcTraceChainDriver "SPI_MODULE_tb.u_SPI_MODULE.PWDATA\[7:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb" -win $_nTrace1
+srcTraceChainDriver "SPI_MODULE_tb.PWDATA\[31:0\]" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb" -win $_nTrace1
+tfgGenerate -incr -ref {SPI_MODULE_tb.PWDATA[31:0]#1470000} -startWithStmt -schFG -traceFlattenMDA 0 -clockSkew 0 -loopUnroll 0 -bboxEmptyModule 0 -bboxIgnoreProtected 0 -cellModel 0 -confined_flattern 32768
+wvSetCursor -win $_nWave2 1516128.311403 -snap {("G1" 2)}
+schCreateWindow -delim "." -win $_nSchema1 -scope "SPI_MODULE_tb"
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schSelect -win $_nSchema5 -inst "u_SPI_MODULE"
+schPushViewIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):Always6:186:199:LatchCombo"
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):Always6:186:199:LatchCombo"
+schPushViewIn -win $_nSchema5
+srcSetScope -win $_nTrace1 "SPI_MODULE_tb.u_SPI_MODULE" -delim "."
+srcSelect -win $_nTrace1 -range {186 199 1 2 1 1}
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_5
+schDeselectAll -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schSelect -win $_nSchema5 -port "PRDATA\[31:0\]"
+schSelect -win $_nSchema5 -port "PRDATA\[31:0\]"
+schPopViewUp -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schSelect -win $_nSchema5 -inst "u_SPI_MODULE"
+schPushViewIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schSelect -win $_nSchema5 -instpin "SPI_MODULE\(@1\):SigTap19:210:210:Combo" "O0"
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schSelect -win $_nSchema5 -port "pad_spi_mosi_oen"
+schPopViewUp -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schSelect -win $_nSchema5 -signal "PCLK"
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schSelect -win $_nSchema5 -inst "SPI_MODULE_tb\(@1\):Init3:15:15:Init"
+schPushViewIn -win $_nSchema5
+srcSetScope -win $_nTrace1 "SPI_MODULE_tb" -delim "."
+srcSelect -win $_nTrace1 -range {15 15 1 10 1 1}
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb" -win $_nTrace1
+srcHBSelect "SPI_MODULE_tb.u_SPI_MODULE" -win $_nTrace1
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_5
+schDeselectAll -win $_nSchema5
+schZoomOut -win $_nSchema5
+schSelect -win $_nSchema5 -inst "SPI_MODULE_tb\(@1\):Init2:50:73:Init"
+schPushViewIn -win $_nSchema5
+srcSetScope -win $_nTrace1 "SPI_MODULE_tb" -delim "."
+srcSelect -win $_nTrace1 -range {50 73 1 2 1 1}
+srcDeselectAll -win $_nTrace1
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_5
+schDeselectAll -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schSelect -win $_nSchema5 -instport "u_SPI_MODULE" "PENABLE"
+schPushViewIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schSelect -win $_nSchema5 -port "arst"
+schSelect -win $_nSchema5 -port "arst"
+schSelect -win $_nSchema5 -port "arst"
+schPopViewUp -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schSelect -win $_nSchema5 -instport "u_SPI_MODULE" "PENABLE"
+schPushViewIn -win $_nSchema5
+schDeselectAll -win $_nSchema5
+schSelect -win $_nSchema5 -port "PSEL"
+schPopViewUp -win $_nSchema5
+schSelect -win $_nSchema5 -instport "u_SPI_MODULE" "PENABLE"
+schPushViewIn -win $_nSchema5
+schSelect -win $_nSchema5 -port "PSEL"
+schProperties -win $_nSchema5
+schProperties -win $_nSchema5 -row 1 -col 1 -propType Basic -showType SourceCode
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_5
+schDisplaySource -win $_nSchema5
+schDeselectAll -win $_nSchema5
+schSelect -win $_nSchema5 -port "PSEL"
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):SigOp0:76:76:Combo"
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):SigOp0:76:76:Combo"
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):SigOp0:76:76:Combo"
+schPushViewIn -win $_nSchema5
+srcSelect -win $_nTrace1 -range {76 76 1 20 1 1}
+srcDeselectAll -win $_nTrace1
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):SigOp4:81:81:Combo"
+schPushViewIn -win $_nSchema5
+srcSelect -win $_nTrace1 -range {81 81 1 16 1 1}
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schDeselectAll -win $_nSchema5
+schSetOptions -win $_nSchema5 -detailRTL on
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):Always42#Always1:107:122:Reg"
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):Always42#Always1:107:122:Reg"
+schPushViewIn -win $_nSchema5
+srcSelect -win $_nTrace1 -range {107 107 1 11 1 1}
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):FSM0#FSM0:219:302:FSM"
+schProperties -win $_nSchema5
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):FSM0#FSM0:219:302:FSM"
+schListPorts -win $_nSchema5 -inst "SPI_MODULE\(@1\):FSM0#FSM0:219:302:FSM"
+schListPorts -win $_nSchema5 -inst "SPI_MODULE\(@1\):FSM0#FSM0:219:302:FSM"
+schZoom {91954} {22500} {97046} {24500} -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):FSM0#FSM0:219:302:FSM"
+schPushViewIn -win $_nSchema5
+fsmSetCurrentWindow -win $_nState6
+fsmResizeWindow 0 28 1093 378 -win $_nState6
+fsmResizeWindow 0 28 1093 378 -win $_nState6
+fsmResizeWindow 0 28 1093 378 -win $_nState6
+fsmSelect -add -state "IDLE_STA" -win $_nState6
+fsmDeselectAll -nonSticky -win $_nState6
+fsmSelect -add -transition "T7" -win $_nState6
+fsmDeselectAll -nonSticky -win $_nState6
+fsmSelect -add -transition "T7" -win $_nState6
+fsmGetTransitionProperty T7 -win $_nState6
+fsmDeselectAll -nonSticky -win $_nState6
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_5
+verdiDockWidgetSetCurTab -dock widgetDock_MTB_SOURCE_TAB_1
+wvSetCursor -win $_nWave2 420416.862781 -snap {("G1" 7)}
+wvSetCursor -win $_nWave2 584642.199805 -snap {("G1" 6)}
+wvSetCursor -win $_nWave2 591211.213286 -snap {("G1" 6)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+verdiDockWidgetSetCurTab -dock widgetDock_<Message>
+verdiDockWidgetSetCurTab -dock windowDock_nWave_2
+srcDeselectAll -win $_nTrace1
+verdiDockWidgetSetCurTab -dock windowDock_nState_6
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_5
+schFit -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):Always44#Always2:128:134:Reg"
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):Always44#Always2:128:134:Reg"
+schPushViewIn -win $_nSchema5
+srcSelect -win $_nTrace1 -range {128 128 1 17 1 1}
+verdiDockWidgetSetCurTab -dock windowDock_nState_6
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomIn -win $_nSchema5
+schZoomOut -win $_nSchema5
+schZoomOut -win $_nSchema5
+schSelect -win $_nSchema5 -inst "SPI_MODULE\(@1\):Always39#Always1:107:122:Sub"
+schPushViewIn -win $_nSchema5
+srcSelect -win $_nTrace1 -range {109 109 1 12 1 1}
+wvSetCursor -win $_nWave2 604349.240248 -snap {("G1" 1)}
+srcDeselectAll -win $_nTrace1
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_5
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "G1" 9 )} 
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvSetCursor -win $_nWave2 972213.995181 -snap {("G1" 5)}
+wvSetCursor -win $_nWave2 1001774.555845 -snap {("G1" 3)}
+wvSetCursor -win $_nWave2 1023123.849658 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 704526.695832 -snap {("G1" 3)}
+wvGoToTime -win $_nWave2 -marker 250
+wvSetCursor -win $_nWave2 426985.876262 -snap {("G1" 7)}
+verdiWindowResize -win $_Verdi_1 "892" "31" "900" "700"
+debExit

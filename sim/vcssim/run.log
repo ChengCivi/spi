@@ -1,0 +1,33 @@
+Command: ./simv -l run.log -ucli -i ./dump_fstb_vcs.tcl +fsdb+autoflush
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Jun 25 23:59 2021
+ucli% global env
+ucli% fsdbDumpfile "$env(demo_name).fsdb"
+*Verdi3* Loading libsscore_vcs201606.so
+*Verdi3* : FSDB_GATE is set.
+*Verdi3* : FSDB_RTL is set.
+*Verdi3* : Enable Parallel Dumping.
+FSDB Dumper for VCS, Release Verdi3_L-2016.06-1, Linux x86_64/64bit, 07/10/2016
+(C) 1996 - 2016 by Synopsys, Inc.
+*Verdi3* : Create FSDB file 'spi_top.fsdb'
+ucli% fsdbDumpvars 0 "SPI_MODULE_tb"
+*Verdi3* : Begin traversing the scope (SPI_MODULE_tb), layer (0).
+*Verdi3* : End of traversing.
+ucli% run 500us
+500000000 ps
+
+finish
+            V C S   S i m u l a t i o n   R e p o r t 
+Time: 500000000 ps
+CPU Time:      0.300 seconds;       Data structure size:   0.0Mb
+Sat Jun 26 00:00:10 2021
+Command: ./simv +v2k -a run.log
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Jun 25 23:46 2021
+Received SIGHUP (signal 1), exiting.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 88565550470000 ps
+CPU Time:    704.070 seconds;       Data structure size:   0.0Mb
+Sat Jun 26 00:55:17 2021

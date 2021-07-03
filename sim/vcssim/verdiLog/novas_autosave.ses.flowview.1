@@ -1,0 +1,29 @@
+FONTSETTING:DEFAULT
+tfgGenerate -ref {SPI_MODULE_tb.u_SPI_MODULE.wfre#350000}  -incr -startWithStmt -schFG -incr -startWithStmt -schFG -incr -startWithStmt -schFG -incr -startWithStmt -schFG
+tfgSetOption :win: -activeNodeOnly off
+tfgSetOption :win: -activeDataNodeOnly off
+tfgSetOption :win: -valueXNodeOnly off
+tfgSetOption :win: -hierName off
+tfgSetOption :win: -sigName on
+tfgSetOption :win: -sigValue on
+tfgSetOption :win: -portName on
+tfgSetOption :win: -showTip off
+tfgSetOption :win: -showHoldCycles off
+tfgSetOption :win: -showDetailsOfHold off
+tfgSetOption :win: -syncWithNWave off
+tfgSetOption :win: -pan on
+tfgSetOption :win: -annotatInColor off
+tfgSetOption :win: -powerCellName off
+tfgNodeShowActiveStatement :win: -folder {SPI_MODULE_tb.u_SPI_MODULE.wfre#350000} {SPI_MODULE_tb.u_SPI_MODULE.Wrtie_Empty} 
+tfgNodeShowActiveStatement :win: -folder {SPI_MODULE_tb.u_SPI_MODULE.wfre#350000} {SPI_MODULE_tb.u_SPI_MODULE.c_state[4:0]} 
+tfgNodeShowActiveStatement :win: -folder {SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync.empty#330000} {SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync.read_gap[3:0]} 
+tfgNodeShowActiveStatement :win: -folder {SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync.read_gap[3:0]#330000} {SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync.wpt[3:0]} 
+tfgNodeShowActiveStatement :win: -folder {SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync.wpt[3:0]#330000} {SPI_MODULE_tb.u_SPI_MODULE.write_fifo_sync.wpt[3:0]} 
+tfgNodeClick  :win: -folder {SPI_MODULE_tb.u_SPI_MODULE.wfre#350000} {SPI_MODULE_tb.u_SPI_MODULE.wfre}
+tfgNodeClick -ctrl :win: -folder {SPI_MODULE_tb.u_SPI_MODULE.wfre#350000} {SPI_MODULE_tb.u_SPI_MODULE.Wrtie_Empty}
+tfgNodeClick -ctrl :win: -folder {SPI_MODULE_tb.u_SPI_MODULE.wfre#350000} {SPI_MODULE_tb.u_SPI_MODULE.nREST}
+tfgNodeClick -ctrl :win: -folder {SPI_MODULE_tb.u_SPI_MODULE.wfre#350000} {SPI_MODULE_tb.u_SPI_MODULE.c_state[4:0]}
+tfgFolderClick -ctrl :win: -folder {SPI_MODULE_tb.u_SPI_MODULE.wfre#350000}
+tfgSetOption :win: -showSrcOnTip off
+tfgSetOption :win: -showNSchema off
+tfgSetOption :win: -showNWave on

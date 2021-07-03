@@ -1,0 +1,20 @@
+FONTSETTING:DEFAULT
+tfgGenerate -ref {SPI_MODULE_tb.u_SPI_MODULE.wfre#164410000}  -incr -startWithStmt -schFG -incr -startWithStmt -schFG -incr -startWithStmt -schFG
+tfgSetOption :win: -activeNodeOnly off
+tfgSetOption :win: -activeDataNodeOnly off
+tfgSetOption :win: -valueXNodeOnly off
+tfgSetOption :win: -hierName off
+tfgSetOption :win: -sigName on
+tfgSetOption :win: -sigValue on
+tfgSetOption :win: -portName on
+tfgSetOption :win: -showTip off
+tfgSetOption :win: -showHoldCycles off
+tfgSetOption :win: -showDetailsOfHold off
+tfgSetOption :win: -syncWithNWave off
+tfgSetOption :win: -pan on
+tfgSetOption :win: -annotatInColor off
+tfgSetOption :win: -powerCellName off
+tfgFolderClick  :win: -folder {SPI_MODULE_tb.u_SPI_MODULE.wfre#164410000}
+tfgSetOption :win: -showSrcOnTip off
+tfgSetOption :win: -showNSchema on
+tfgSetOption :win: -showNWave off

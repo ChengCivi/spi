@@ -1,0 +1,4 @@
+/mnt/mydata/spi/bench/APB_Master_Model.v
+/mnt/mydata/spi/bench/SPI_MODULE_tb.v
+/mnt/mydata/spi/rtl/SPI_MODULE.v
+/mnt/mydata/spi/rtl/fifo_sync.v

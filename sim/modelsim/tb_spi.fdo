@@ -1,0 +1,20 @@
+vlib work   
+vmap work ./work
+
+vlog +acc  ./../../rtl/SPI_MODULE.v
+vlog +acc  ./../../rtl/fifo_sync.v
+vlog +acc  ./../../bench/SPI_MODULE_tb.v
+
+vsim -novopt work.tb_SPI_MODULE
+##vsim -t 1ps   -lib work  SPI_MODULE_tb
+
+add wave tb_SPI_MODULE/u_SPI_MODULE/* 
+add wave tb_SPI_MODULE/u_SPI_MODULE/write_fifo_sync/*
+
+
+
+
+
+view wave                        
+view structure
+run 500us

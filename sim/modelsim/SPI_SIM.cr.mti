@@ -1,0 +1,22 @@
+J:/Docker/share/spi/bench/APB_Master_Model.v {1 {vlog -work work -vopt -stats=none J:/Docker/share/spi/bench/APB_Master_Model.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module APB_Master_Model
+
+Top level modules:
+	APB_Master_Model
+
+} {} {}} J:/Docker/share/spi/rtl/fifo_sync.v {1 {vlog -work work -vopt -stats=none J:/Docker/share/spi/rtl/fifo_sync.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module fifo_sync
+
+Top level modules:
+	fifo_sync
+
+} {} {}} J:/Docker/share/spi/bench/fifo_sync_tb.v {1 {vlog -work work -vopt -stats=none J:/Docker/share/spi/bench/fifo_sync_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module fifo_sync_tb
+
+Top level modules:
+	fifo_sync_tb
+
+} {} {}}

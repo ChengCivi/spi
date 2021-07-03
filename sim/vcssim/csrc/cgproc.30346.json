@@ -1,0 +1,71 @@
+{
+    "Modules": {
+        "SPI_MODULE_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "fifo_sync": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "CjWEB_d": {
+            "mod": "SPI_MODULE_tb",
+            "archive": "archive.0/_30346_archive_1.a",
+            "bytes": 50310,
+            "out": "CjWEB_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "bytes": 7395,
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "archive": "archive.0/_30346_archive_1.a",
+            "bytes": 33397,
+            "out": "reYIK_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "prbSR_d": {
+            "mod": "fifo_sync",
+            "archive": "archive.0/_30346_archive_1.a",
+            "bytes": 17538,
+            "out": "prbSR_d.o",
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_30346_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    33397
+                ],
+                [
+                    "CjWEB_d.o",
+                    50310
+                ],
+                [
+                    "prbSR_d.o",
+                    17538
+                ]
+            ],
+            "size": 101245
+        }
+    ],
+    "reusePaths": {}
+}

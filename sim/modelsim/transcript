@@ -1,0 +1,135 @@
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# OpenFile tb_spi.fdo
+do tb_spi.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet work ./work 
+# Copying F:/altera/modelsim/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied F:/altera/modelsim/win64/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 21:27:51 on Jun 20,2021
+# vlog -reportprogress 300 "+acc" ./../../rtl/spi.v 
+# ** Error: (vlog-7) Failed to open design unit file "./../../rtl/spi.v" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# End time: 21:27:51 on Jun 20,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: F:/altera/modelsim/win64/vlog failed.
+# Error in macro ./tb_spi.fdo line 4
+# F:/altera/modelsim/win64/vlog failed.
+#     while executing
+# "vlog +acc  ./../../rtl/spi.v"
+do tb_spi.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet work ./work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 21:32:32 on Jun 20,2021
+# vlog -reportprogress 300 "+acc" ./../../rtl/spi.v 
+# -- Compiling module SPI_MODULE
+# 
+# Top level modules:
+# 	SPI_MODULE
+# End time: 21:32:32 on Jun 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 21:32:32 on Jun 20,2021
+# vlog -reportprogress 300 "+acc" ./../../rtl/fifo_sync.v 
+# -- Compiling module fifo_sync
+# 
+# Top level modules:
+# 	fifo_sync
+# End time: 21:32:32 on Jun 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 21:32:32 on Jun 20,2021
+# vlog -reportprogress 300 "+acc" ./../../bench/SPI_MODULE_tb.v 
+# -- Compiling module SPI_MODULE_tb
+# 
+# Top level modules:
+# 	SPI_MODULE_tb
+# End time: 21:32:32 on Jun 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim tb_spi.fdo 
+# Start time: 21:32:32 on Jun 20,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.tb_SPI_MODULE
+# Refreshing J:/Docker/share/spi/sim/modelsim/work.SPI_MODULE
+# Loading work.SPI_MODULE
+# Loading work.FIFO_SYNC
+# Loading work.APB_Master_Model
+# ** Error: (vish-4014) No objects found matching 'SPI_MODULE_tb/u_SPI_MODULE/*'.
+# Error in macro ./tb_spi.fdo line 11
+# (vish-4014) No objects found matching 'SPI_MODULE_tb/u_SPI_MODULE/*'.
+#     while executing
+# "add wave SPI_MODULE_tb/u_SPI_MODULE/* "
+do tb_spi.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet work ./work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 21:35:25 on Jun 20,2021
+# vlog -reportprogress 300 "+acc" ./../../rtl/spi.v 
+# -- Compiling module SPI_MODULE
+# 
+# Top level modules:
+# 	SPI_MODULE
+# End time: 21:35:25 on Jun 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 21:35:25 on Jun 20,2021
+# vlog -reportprogress 300 "+acc" ./../../rtl/fifo_sync.v 
+# -- Compiling module fifo_sync
+# 
+# Top level modules:
+# 	fifo_sync
+# End time: 21:35:25 on Jun 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 21:35:25 on Jun 20,2021
+# vlog -reportprogress 300 "+acc" ./../../bench/SPI_MODULE_tb.v 
+# -- Compiling module SPI_MODULE_tb
+# 
+# Top level modules:
+# 	SPI_MODULE_tb
+# End time: 21:35:25 on Jun 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 21:35:37 on Jun 20,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.tb_SPI_MODULE
+# Refreshing J:/Docker/share/spi/sim/modelsim/work.SPI_MODULE
+# Loading work.SPI_MODULE
+# Loading work.FIFO_SYNC
+# Loading work.APB_Master_Model
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# Causality operation skipped due to absence of debug database file
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+add wave -position insertpoint  \
+sim:/tb_SPI_MODULE/u_SPI_MODULE/write_fifo_sync/mem
+run
